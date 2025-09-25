@@ -1,0 +1,21 @@
+[class Main.java](https://github.com/user-attachments/files/22527121/class.Main.java)
+public class Main {
+    public static void main(String[] args) {
+        Pessoa p = new Pessoa("João", 30, "123.456.789-00");
+        p.mostrarDados();
+
+        System.out.println();
+        
+        Funcionario f = new Funcionario("Maria", 25, "987.654.321-00", "Analista", "01/01/2022", 3000.0);
+        f.mostrarDados();
+        System.out.println("Salário Anual: R$ " + f.calcularSalarioAnual());
+        f.receberAumento(10);
+        System.out.println("Salário após aumento: R$ " + f.salario);
+
+        System.out.println();
+
+        Gerente g = new Gerente("Carlos", 40, "111.222.333-44", "Gerente de TI", "10/05/2020", 8000.0, 5, 2000.0);
+        g.mostrarDados();
+        g.gerenciarEquipe();
+    }
+}
